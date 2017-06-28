@@ -122,4 +122,9 @@ public class UserServiceImpl implements UserService {
         }
         return new PageInfo<>(roleList);
     }
+
+    @Override
+    public int deleteUsersRoleId(Integer roleId) {
+        return userMapper.updateUsersRoleId(roleId);
+    }
 }

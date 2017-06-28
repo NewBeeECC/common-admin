@@ -8,6 +8,7 @@ import com.common.system.mapper.RcRoleMapper;
 import com.common.system.service.PermissionService;
 import com.common.system.service.RelationService;
 import com.common.system.service.RoleService;
+import com.common.system.service.UserService;
 import com.common.system.util.MsgCode;
 import com.common.system.util.Result;
 import com.github.pagehelper.PageHelper;
@@ -33,6 +34,8 @@ public class RoleServiceImpl implements RoleService {
     private RelationService relationService;
     @Autowired
     private PermissionService permissionService;
+    @Autowired
+    private UserService userService;
 
     @Override
     public PageInfo<RcRole> listForPage(Integer pageNum, Integer pageSize) {
@@ -45,7 +48,13 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public int deleteById(Integer id) {
-        return roleMapper.deleteByPrimaryKey(id);
+        int flag = roleMapper.deleteByPrimaryKey(id);
+        if (flag > 0){
+            //更新数据库
+            userService.deleteUsersRoleId(id);
+            relationService.deleteByRoleId(id);
+        }
+        return flag;
     }
 
     @Override
