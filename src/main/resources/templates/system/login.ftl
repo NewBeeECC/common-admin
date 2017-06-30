@@ -10,9 +10,44 @@
 	<!--[if IE]>
 		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
 	<![endif]-->
+    <script type="text/javascript" charset="utf-8" src="/adminlte/plugins/an_login/edge_includes/edge.6.0.0.min.js"></script>
+    <script>
+        AdobeEdge.loadComposition('/adminlte/plugins/an_login/edge_includes/', 'EDGE-279555267', {
+            scaleToFit: "width",
+            centerStage: "none",
+            minW: "0px",
+            maxW: "undefined",
+            width: "1000px",
+            height: "400px"
+        }, {dom: [ ]}, {dom: [ ]});
+    </script>
+	<style type="text/css">
+		.flow-wrapper{
+			position: absolute;
+			bottom: -100px;
+			top:0px;
+			margin: auto;
+		}
+		#Stage{
+            background-color: rgb(57, 173, 205) !important;
+		}
+		#bg{
+			height: 40%;
+			position: absolute;
+			width: 100%;
+			bottom:0px;;
+		}
+        .login{
+			background: none;
+			color: 575757;;
+		}
+	</style>
 </head>
-<body>
-	<div class="cont">
+<body style=" background-color: rgb(57, 173, 205) !important;">
+<div id="Stage" class="EDGE-279555267">
+</div>
+<div id="bg" style="background: #78d2eb"></div>
+	<div class="cont" style="background-image:none;">
 	  <div class="demo">
 	    <div class="login">
 	      <div class="login__check">

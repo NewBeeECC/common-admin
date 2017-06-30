@@ -73,7 +73,7 @@ $(function() {
 		"columns":[ 
 		    {"data":null}, 
 			{"data":"username"},
-			{"data":"name"},
+			{"data":null},
 			{"data":null},
 			{"data":null},
 			{"data":"createtime"},
@@ -89,7 +89,7 @@ $(function() {
 			    }
 			},
             {
-                targets: 3,
+                targets: 2,
                 data: null,
                 render: function (data) {
                     var name = data.name;
@@ -102,7 +102,9 @@ $(function() {
 			    render: function (data) {
 			    	var  listStr = "";
 			    	var list = data.role;
-					listStr = list.name;
+					if(list){
+                        listStr = list.name;
+					}
 			    	return listStr;
 			    }
 			},

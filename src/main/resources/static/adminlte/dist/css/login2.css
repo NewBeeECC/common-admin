@@ -57,8 +57,8 @@ button {
 .login {
   position: relative;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
-  background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -webkit-linear-gradient(top, rgba(130, 130, 130, 0.8) 0%, rgba(12, 21, 13, 0.6) 100%);
+  background: linear-gradient(to bottom, rgba(130, 130, 130, 0.8) 0%, rgba(12, 21, 13, 0.6) 100%);
   -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
   transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
   -webkit-transform: scale(1);
@@ -80,7 +80,7 @@ button {
 .login__check img {
   max-width: 100%;
   max-height: 100%;
-  padding-right: 1rem;
+  /* padding-right: 1rem; */
 }
 .login__form {
   position: absolute;
@@ -127,7 +127,7 @@ button {
   height: 4rem;
   margin: 5rem 0 2.2rem;
   color: rgba(255, 255, 255, 0.8);
-  background: #FF3366;
+  background: #8eb826;
   font-size: 1.5rem;
   border-radius: 3rem;
   cursor: pointer;
@@ -176,7 +176,7 @@ button {
 }
 .login__signup {
   font-size: 1.2rem;
-  color: #ABA8AE;
+  color: #706f70;
 }
 .login__signup a {
   color: #fff;
@@ -234,7 +234,7 @@ button {
   background: #fff;
 }
 .app__title {
-  font-family: "微软雅黑";
+  font-family: "ÃƒÂ¥Ã‚Â¾Ã‚Â®ÃƒÂ¨Ã‚Â½Ã‚Â¯ÃƒÂ©Ã¢â‚¬ÂºÃ¢â‚¬Â¦ÃƒÂ©Ã‚Â»Ã¢â‚¬Ëœ";
   text-align: center;
   line-height: 5rem;
   border-bottom: 1px solid #eee;

@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Update;
 
 @Mapper
 public interface RcUserMapper {
@@ -30,4 +31,7 @@ public interface RcUserMapper {
     int updateByPrimaryKey(RcUser record);
 
     RcUser getUserByName(String username);
+
+    @Update("update rc_user set roleid=null where roleid=#{roleId}")
+    int updateUsersRoleId(Integer roleId);
 }
