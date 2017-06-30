@@ -61,7 +61,7 @@
                             </li>
                         </@shiro.hasRole>
                         <li>
-                            <a target="_blank" href="/druid">
+                            <a target="_blank" href="/druid/index.html">
                                 <i class="fa fa-inbox"></i>
                                 <span>数据库日志</span>
                             </a>
@@ -89,12 +89,12 @@
             <ul class="nav navbar-nav">
                 <li class="dropdown user user-menu">
                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="adminlte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> <span
+                        <img src="${request.contextPath}/adminlte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> <span
                             class="hidden-xs">大数据可视化</span>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="user-header">
-                            <img src="adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="${request.contextPath}/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                             <p>
                                 ${user.username!}
@@ -135,52 +135,52 @@
 <#macro style>
 <!-- Tell the browser to be responsive to screen width -->
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<link rel="shortcut icon" type="image/x-icon" href="adminlte/dist/img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="${request.contextPath}/adminlte/dist/img/favicon.ico">
 <!-- Bootstrap 3.3.6 -->
-<link rel="stylesheet" href="adminlte/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/bootstrap/css/bootstrap.min.css">
 <!-- Font Awesome -->
-<link rel="stylesheet" href="adminlte/dist/css/font-awesome.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/dist/css/font-awesome.min.css">
 <!-- Ionicons -->
-<link rel="stylesheet" href="adminlte/dist/css/ionicons.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/dist/css/ionicons.min.css">
 <!-- Theme style -->
-<link rel="stylesheet" href="adminlte/dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/dist/css/AdminLTE.min.css">
 <!-- AdminLTE Skins. Choose a skin from the css/skins
    folder instead of downloading all of them to reduce the load. -->
-<link rel="stylesheet" href="adminlte/dist/css/skins/_all-skins.min.css"
+<link rel="stylesheet" href="${request.contextPath}/adminlte/dist/css/skins/_all-skins.min.css"
 <!-- 以上为公共css -->
 
 <!-- daterange picker -->
-<link rel="stylesheet" href="adminlte/plugins/daterangepicker/daterangepicker.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/daterangepicker/daterangepicker.css">
 <!-- bootstrap datepicker -->
-<link rel="stylesheet" href="adminlte/plugins/datepicker/datepicker3.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/datepicker/datepicker3.css">
 <!-- iCheck for checkboxes and radio inputs -->
-<link rel="stylesheet" href="adminlte/plugins/iCheck/all.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/iCheck/all.css">
 <!-- Bootstrap Color Picker -->
-<link rel="stylesheet" href="adminlte/plugins/colorpicker/bootstrap-colorpicker.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/colorpicker/bootstrap-colorpicker.min.css">
 <!-- Bootstrap time Picker -->
-<link rel="stylesheet" href="adminlte/plugins/timepicker/bootstrap-timepicker.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/timepicker/bootstrap-timepicker.min.css">
 <!-- Select2 -->
-<link rel="stylesheet" href="adminlte/plugins/select2/select2.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/select2/select2.min.css">
 <!-- bootstrap wysihtml5 - text editor -->
-<link rel="stylesheet" href="adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 <!-- iCheck -->
-<link rel="stylesheet" href="adminlte/plugins/iCheck/flat/blue.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/iCheck/flat/blue.css">
 
 <!-- fullCalendar 2.2.5-->
-<link rel="stylesheet" href="adminlte/plugins/fullcalendar/fullcalendar.min.css">
-<link rel="stylesheet" href="adminlte/plugins/fullcalendar/fullcalendar.print.css" media="print">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/fullcalendar/fullcalendar.min.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/fullcalendar/fullcalendar.print.css" media="print">
 
 <!-- Ion Slider -->
-<link rel="stylesheet" href="adminlte/plugins/ionslider/ion.rangeSlider.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/ionslider/ion.rangeSlider.css">
 <!-- ion slider Nice -->
-<link rel="stylesheet" href="adminlte/plugins/ionslider/ion.rangeSlider.skinNice.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/ionslider/ion.rangeSlider.skinNice.css">
 <!-- bootstrap slider -->
-<link rel="stylesheet" href="adminlte/plugins/bootstrap-slider/slider.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/bootstrap-slider/slider.css">
 
 <!-- Morris chart -->
-<link rel="stylesheet" href="adminlte/plugins/morris/morris.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/morris/morris.css">
 <!-- jvectormap -->
-<link rel="stylesheet" href="adminlte/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+<link rel="stylesheet" href="${request.contextPath}/adminlte/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -213,71 +213,71 @@
 
 <#macro jsFile>
 <!-- jQuery 2.2.3 -->
-<script src="adminlte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="adminlte/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="adminlte/plugins/fastclick/fastclick.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/fastclick/fastclick.js"></script>
 <!-- Slimscroll -->
-<script src="adminlte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- AdminLTE App -->
-<script src="adminlte/dist/js/app.js"></script>
+<script src="${request.contextPath}/adminlte/dist/js/app.js"></script>
 <!-- 以上JS为页面必须 -->
 
 <!-- jQuery UI 1.11.4 -->
-<script src="adminlte/plugins/jQueryUI/jquery-ui.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/jQueryUI/jquery-ui.min.js"></script>
 <!-- Morris.js charts -->
-<script src="adminlte/plugins/raphael/raphael.min.js"></script>
-<script src="adminlte/plugins/morris/morris.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/raphael/raphael.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/morris/morris.min.js"></script>
 <!-- Sparkline -->
-<script src="adminlte/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
-<script src="adminlte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="adminlte/plugins/knob/jquery.knob.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/knob/jquery.knob.js"></script>
 <!-- daterangepicker -->
-<script src="adminlte/plugins/moment/moment.min.js"></script>
-<script src="adminlte/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/moment/moment.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- datepicker -->
-<script src="adminlte/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/datepicker/bootstrap-datepicker.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
-<script src="adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- SlimScroll 1.3.0 -->
-<script src="adminlte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- ChartJS 1.0.1 -->
-<script src="adminlte/plugins/chartjs/Chart.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/chartjs/Chart.min.js"></script>
 <!-- FLOT CHARTS -->
-<script src="adminlte/plugins/flot/jquery.flot.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/flot/jquery.flot.min.js"></script>
 <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
-<script src="adminlte/plugins/flot/jquery.flot.resize.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/flot/jquery.flot.resize.min.js"></script>
 <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-<script src="adminlte/plugins/flot/jquery.flot.pie.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/flot/jquery.flot.pie.min.js"></script>
 <!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
-<script src="adminlte/plugins/flot/jquery.flot.categories.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/flot/jquery.flot.categories.min.js"></script>
 <!-- iCheck -->
-<script src="adminlte/plugins/iCheck/icheck.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/iCheck/icheck.min.js"></script>
 <!-- Select2 -->
-<script src="adminlte/plugins/select2/select2.full.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/select2/select2.full.min.js"></script>
 <!-- InputMask -->
-<script src="adminlte/plugins/input-mask/jquery.inputmask.js"></script>
-<script src="adminlte/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="adminlte/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/input-mask/jquery.inputmask.extensions.js"></script>
 <!-- date-range-picker -->
-<script src="adminlte/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- bootstrap datepicker -->
-<script src="adminlte/plugins/datepicker/bootstrap-datepicker.js"></script>
-<script src="adminlte/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
 <!-- bootstrap color picker -->
-<script src="adminlte/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
 <!-- bootstrap time picker -->
-<script src="adminlte/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/timepicker/bootstrap-timepicker.min.js"></script>
 <!-- Ion Slider -->
-<script src="adminlte/plugins/ionslider/ion.rangeSlider.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/ionslider/ion.rangeSlider.min.js"></script>
 <!-- Bootstrap slider -->
-<script src="adminlte/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/bootstrap-slider/bootstrap-slider.js"></script>
 <!-- DataTables -->
-<script src="adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="adminlte/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="${request.contextPath}/adminlte/plugins/datatables/dataTables.bootstrap.min.js"></script>
 <script type="text/javascript">
     var list_ajax;
     var date_ajax;

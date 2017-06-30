@@ -7,3 +7,6 @@
 /mvnw.cmd
 /mvnw
 /.mvn
+*.properties
+/src/main/resources/*.properties
+/src/main/resources/application.properties
