@@ -26,6 +26,19 @@
                     <i class="fa fa-folder"></i> <span>数据字典管理</span> </i>
                 </a>
             </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-fw fa-share-alt"></i> <span>流程引擎</span> <span class="pull-right-container"> <i
+                        class="fa fa-angle-left pull-right"></i></span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a target="navTab" href="/adminlte/plugins/activiti/model-list.html">
+                            <i class="fa fa-inbox"></i> <span>流程管理</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <@shiro.hasAnyRoles name ="super,admin">
                 <li class="treeview">
                     <a href="#">
