@@ -1137,32 +1137,39 @@ function _init() {
     var that = $(this);
     var _text = that.text();
     var _href = that.attr("href");
+    //这里加一个iframe支持
+
     if (!$("#navTabs li[url='"+_href+"']").length) {
-
-        $("#loading").show();
-        $.ajax({
-          url:_href,
-          dataType:"html",
-          success:function(result){
-            $("#loading").hide();
-            // $.each($(result),function(i,item){
-
-            //   if (item.nodeName == "LINK" || item.nodeName == "link") {
-            //     require1(item.href);
-            //   }
-            //   if (item.nodeName == "SCRIPT" || item.nodeName == "script" && !!item.src) {
-            //     require1(item.src);
-            //   }
-            // })
+        if(that.attr('target_type') == 'iframe'){
             $("#navTabs").append('<li url="'+_href+'"><span>'+_text+'</span><a href="javascript:void(0);" class="fa fa-close"></a></li>');
-            $("#content").append('<div class="tabs-panel">'+result+'</div>');
-            showTab($("#navTabs li[url='"+_href+"']"));   
-          },
-          error:function(err){
-            $("#loading").hide();
-            console.log(err)
-          }
-        })
+            $("#content").append('<div class="tabs-panel mainContent"><iframe class="LRADMS_iframe" name="iframe0" width="100%" height="100%" src="'+_href+'" frameborder="0"></iframe></div>');
+            showTab($("#navTabs li[url='"+_href+"']"));
+        }else{
+            $("#loading").show();
+            $.ajax({
+                url:_href,
+                dataType:"html",
+                success:function(result){
+                    $("#loading").hide();
+                    // $.each($(result),function(i,item){
+
+                    //   if (item.nodeName == "LINK" || item.nodeName == "link") {
+                    //     require1(item.href);
+                    //   }
+                    //   if (item.nodeName == "SCRIPT" || item.nodeName == "script" && !!item.src) {
+                    //     require1(item.src);
+                    //   }
+                    // })
+                    $("#navTabs").append('<li url="'+_href+'"><span>'+_text+'</span><a href="javascript:void(0);" class="fa fa-close"></a></li>');
+                    $("#content").append('<div class="tabs-panel">'+result+'</div>');
+                    showTab($("#navTabs li[url='"+_href+"']"));
+                },
+                error:function(err){
+                    $("#loading").hide();
+                    console.log(err)
+                }
+            })
+        }
     }else{
       showTab($("#navTabs li[url='"+_href+"']"));      
     }

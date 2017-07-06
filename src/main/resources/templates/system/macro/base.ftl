@@ -80,6 +80,19 @@
                             </a>
                         </li>
                     </ul>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-fw fa-share-alt"></i> <span>UI框架</span> <span class="pull-right-container"> <i
+                            class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a target="navTab" target_type="iframe" fresh="false" href="/adminlte/plugins/AdminLTE/index.html">
+                                <i class="fa fa-inbox"></i> <span>adminLTE</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 </li>
             </@shiro.hasAnyRoles>
         </ul>
