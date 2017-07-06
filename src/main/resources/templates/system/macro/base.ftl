@@ -42,53 +42,67 @@
             <@shiro.hasAnyRoles name ="super,admin">
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-envelope"></i>
+                        <i class="fa fa-fw fa-cogs"></i>
                         <span>系统设置</span>
                         <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i></span>
                     </a>
                     <ul class="treeview-menu">
                         <li>
                             <a target="navTab" href="/user/list">
-                                <i class="fa fa-inbox"></i>
+                                <i class="fa fa-fw fa-cogs"></i>
                                 <span>用户管理</span>
                             </a>
                         </li>
                         <li>
                             <a target="navTab" href="/role/list">
-                                <i class="fa fa-inbox"></i>
+                                <i class="fa fa-fw fa-cogs"></i>
                                 <span>角色管理</span>
                             </a>
                         </li>
                         <li>
                             <a target="navTab" href="/permission/list">
-                                <i class="fa fa-inbox"></i>
+                                <i class="fa fa-fw fa-cogs"></i>
                                 <span>权限管理</span>
                             </a>
                         </li>
                         <@shiro.hasRole name="super">
                             <li>
                                 <a target="_blank" href="/doc.html">
-                                    <i class="fa fa-inbox"></i>
+                                    <i class="fa fa-fw fa-cogs"></i>
                                     <span>API文档</span>
                                 </a>
                             </li>
                         </@shiro.hasRole>
                         <li>
                             <a target="_blank" href="/druid/index.html">
-                                <i class="fa fa-inbox"></i>
+                                <i class="fa fa-fw fa-cogs"></i>
                                 <span>数据库日志</span>
                             </a>
                         </li>
                     </ul>
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-fw fa-share-alt"></i> <span>UI框架</span> <span class="pull-right-container"> <i
+                        <i class="fa fa-fw fa-html5"></i> <span>组件管理</span> <span class="pull-right-container"> <i
+                            class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a target="navTab" target_type="iframe" fresh="false" href="/react/index">
+                                <i class="fa fa-fw fa-html5"></i> <span>编辑组件</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-fw fa-stack-overflow"></i> <span>UI框架</span> <span class="pull-right-container"> <i
                             class="fa fa-angle-left pull-right"></i></span>
                     </a>
                     <ul class="treeview-menu">
                         <li>
                             <a target="navTab" target_type="iframe" fresh="false" href="/adminlte/plugins/AdminLTE/index.html">
-                                <i class="fa fa-inbox"></i> <span>adminLTE</span>
+                                <i class="fa fa-fw fa-stack-overflow"></i> <span>adminLTE</span>
                             </a>
                         </li>
                     </ul>
